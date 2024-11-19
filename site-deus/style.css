@@ -9,7 +9,7 @@ body {
 .banner {
     position: relative;
     overflow: hidden;
-    height: 400px; /* altura do banner */
+    height: 400px;
 }
 
 .banner img {
@@ -34,15 +34,15 @@ body {
 
 nav {
     position: absolute;
-    top: 20px; /* ajuste a posição vertical do menu */
-    right: 20px; /* ajuste a posição horizontal do menu */
-    z-index: 1; /* garante que o menu fique acima da imagem */
+    top: 20px;
+    right: 20px;
+    z-index: 1;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
-    margin: 0; /* remove margem */
+    margin: 0;
 }
 
 nav ul li {
@@ -51,16 +51,15 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white; /* cor do texto do menu */
+    color: white;
     text-decoration: none;
     transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #ffcc00; /* cor ao passar o mouse */
+    color: #ffcc00;
 }
 
-/* Estilo do parágrafo explicativo */
 .intro p {
     font-size: 18px;
     font-weight: bold;
@@ -74,8 +73,8 @@ nav ul li a:hover {
 
 .cards {
     display: grid;
-    flex-wrap: wrap; /* Permite que os cards se movam para a próxima linha se não houver espaço */
-    justify-content: center; /* Alinha os cards no centro */
+    flex-wrap: wrap;
+    justify-content: center;
     margin: 20px 0;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
@@ -83,38 +82,38 @@ nav ul li a:hover {
 }
 
 .card {
-    width: 300px; /* ajuste a largura conforme necessário */
+    width: 300px;
     margin: 5px;
-    height: 500px; /* Defina uma altura para evitar sobreposição */
-    transition: box-shadow 0.2s; /* Transição suave para sombra */
+    height: 500px;
+    transition: box-shadow 0.2s;
 }
 
 .card-inner {
     transform-style: preserve-3d;
     transition: transform 0.6s;
-    height: 100%; /* Mantenha a altura do card */
+    height: 100%;
 }
 
 .card:hover .card-inner {
-    transform: rotateY(180deg); /* gira o card */
+    transform: rotateY(180deg);
 }
 
 .card-front, .card-back {
     position: absolute;
     width: 100%;
     height: 100%;
-    backface-visibility: hidden; /* esconde a parte de trás ao girar */
+    backface-visibility: hidden;
     border-radius: 8px;
     overflow: hidden;
 }
 
 .card-back {
-    background-color: #333; /* cor de fundo clara */
+    background-color: #333;
     color: white;
-    transform: rotateY(180deg); /* posiciona a parte de trás */
+    transform: rotateY(180deg);
     padding: 20px;
-    display: flex; /* Alinha conteúdo no centro */
-    flex-direction: column; /* Organiza em coluna */
+    display: flex;
+    flex-direction: column;
 }
 
 .card-front img {
@@ -128,56 +127,56 @@ nav ul li a:hover {
 
 #contato {
     padding: 40px 20px;
-    background: #f9f9f9; /* Cor de fundo clara para a seção de contato */
+    background: #f9f9f9;
     text-align: center;
 }
 
 .perfil-instituicoes {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start; /* Alinha os itens do topo */
+    align-items: flex-start;
 }
 
 .perfil {
-    flex: 1; /* Permite que o perfil ocupe um espaço proporcional */
-    margin-right: 10px; /* Espaço entre o perfil e o carrossel */
+    flex: 1;
+    margin-right: 10px;
 }
 
 .foto-perfil {
-    width: 300px; /* Aumentei o tamanho da foto do perfil */
+    width: 300px;
     height: 300px;
-    border-radius: 50%; /* Faz a imagem ser redonda */
+    border-radius: 50%;
    
 }
 
 .instituicoes-carousel {
-    flex: 1; /* Permite que o carrossel de instituições ocupe um espaço proporcional */
+    flex: 1;
 }
 
 .carousel-redondo {
     display: flex;
-    overflow: hidden; /* Esconde os itens que estão fora da tela */
-    width: 300px; /* Ajuste a largura do carrossel para mostrar apenas alguns itens */
+    overflow: hidden;
+    width: 300px;
     margin: 0 auto;
     padding: 50px;
 }
 
 .carousel-redondo .carousel-item {
-    min-width: 100px; /* Diminui o tamanho das logos */
-    margin: 0 5px; /* Espaço entre os logos */
-    border-radius: 50%; /* Faz os logos serem redondos */
+    min-width: 100px;
+    margin: 0 5px;
+    border-radius: 50%;
    
 }
 
 .carousel-redondo .carousel-item img {
-    width: 100%; /* Faz a imagem ocupar todo o espaço disponível */
+    width: 100%;
     height: auto;
 }
 
 .carousel-item img {
-    width: 300%; /* Faz a imagem ocupar todo o espaço disponível */
+    width: 300%;
     height: auto;
-    border-radius: 50px; /* Bordas arredondadas nas imagens do carrossel */
+    border-radius: 50px;
 }
 
 .contato-paragrafo {
@@ -281,7 +280,7 @@ h2 {
 
 .lado-biblia, .lado-ciencia {
     text-decoration: none;
-    color: inherit; /* Garante que a cor do texto seja a mesma do lado */
+    color: inherit;
 }
 
 .evidencias-paragrafo {
@@ -306,8 +305,8 @@ h2 {
 
 footer {
     text-align: center;
-    padding: 20px 0; /* Aumentado para mais espaço */
-    background: #1a1a1a; /* preto claro */
+    padding: 20px 0;
+    background: #1a1a1a;
     color: white;
     position: relative;
     bottom: 0;
@@ -315,28 +314,28 @@ footer {
 }
 
 footer p {
-    margin: 5px 0; /* Margem leve para o parágrafo */
-    font-size: 1.1rem; /* Tamanho da fonte ajustado */
+    margin: 5px 0;
+    font-size: 1.1rem;
 }
 
 footer .social-links {
-    margin-top: 15px; /* espaço acima dos ícones */
+    margin-top: 15px;
 }
 
 footer .social-links a {
-    display: inline-block; /* Faz os links serem inline */
-    margin: 0 15px; /* espaço entre os ícones */
-    transition: transform 0.3s; /* Transição suave ao passar o mouse */
+    display: inline-block;
+    margin: 0 15px;
+    transition: transform 0.3s;
 }
 
 footer .social-links a:hover {
-    transform: scale(1.2); /* Aumenta o ícone ao passar o mouse */
+    transform: scale(1.2);
 }
 
 footer .icon {
-    width: 36px; /* Ajuste o tamanho dos ícones */
+    width: 36px;
     height: 36px;
-    vertical-align: middle; /* alinha os ícones ao meio do texto */
+    vertical-align: middle;
 }
 
 

@@ -1,18 +1,16 @@
-// Carrossel das instituições
 const instituicoesCarousel = document.querySelector('.carousel-redondo');
 let scrollInstituicoes = 0;
 
 function autoScrollInstituicoes() {
-    scrollInstituicoes += 1; // Incrementa a rolagem
+    scrollInstituicoes += 1; 
     instituicoesCarousel.scrollLeft = scrollInstituicoes;
 
-    // Reinicia a rolagem quando atinge o fim
     if (scrollInstituicoes >= instituicoesCarousel.scrollWidth - instituicoesCarousel.clientWidth) {
         scrollInstituicoes = 0;
     }
 
-    requestAnimationFrame(autoScrollInstituicoes); // Animação contínua
+    requestAnimationFrame(autoScrollInstituicoes); 
 }
 
-autoScrollInstituicoes(); // Inicia o carrossel automático
+autoScrollInstituicoes(); 
 

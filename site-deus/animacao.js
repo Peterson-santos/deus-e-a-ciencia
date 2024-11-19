@@ -2,14 +2,12 @@ document.addEventListener("DOMContentLoaded", function () {
     const animatedElements = document.querySelectorAll(".animated");
     const title = document.querySelector("h1");
     
-    // Animação do título
     title.classList.add("fade-in");
 
-    // Adiciona a classe appear a todos os parágrafos após um pequeno atraso
     animatedElements.forEach((element, index) => {
         setTimeout(() => {
             element.classList.add("appear");
-        }, index * 300); // Atraso de 300ms entre cada parágrafo
+        }, index * 300); 
     });
 
     function onScroll() {
@@ -24,5 +22,5 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     window.addEventListener("scroll", onScroll);
-    onScroll(); // Chama a função uma vez para animar elementos que estão visíveis na carga da página
+    onScroll();
 });
