@@ -1,0 +1,77 @@
+body {
+    font-family: "Georgia", serif;
+    background-color: #f7f7f7;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+#ciencia-section {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: left;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #4A2C2A;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.texto-ciencia p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: justify;
+    color: #555;
+    background-color: #f9f3eb;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.texto-ciencia p.appear {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.texto-ciencia p strong {
+    color: #4A2C2A;
+    font-weight: bold;
+}
+
+.texto-ciencia p:first-letter {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #4A2C2A;
+}
+
+.botao-voltar {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.botao-voltar a {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #007BFF;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.botao-voltar a:hover {
+    background-color: #0056b3;
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+
